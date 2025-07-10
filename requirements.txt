@@ -1,0 +1,5 @@
+streamlit
+pyshark
+tensorflow
+numpy
+joblib
