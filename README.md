@@ -85,7 +85,7 @@ streamlit run app.py
 The app uses SMTP (Gmail) to send alerts when malware is detected. Update your credentials and consider using an app password:
 
 ### ✅ Step-by-Step: Create an App-Specific Password for Gmail
-#####⚠️ Important: Do NOT use your actual Gmail password in the code. Instead, generate an App Password as below.
+⚠️ Important: Do NOT use your actual Gmail password in the code. Instead, generate an App Password as below.
 1. Enable 2-Step Verification on your Gmail account:
 
 - Go to: https://myaccount.google.com/security
@@ -146,7 +146,7 @@ Each log includes:
 - Malware Type
 
   ## 🧠 Architecture Overview
-
+```text
   ┌────────────┐      ┌────────────┐       ┌────────────┐
 │ PyShark    │─────▶ Feature     │──────▶ Preprocess  │
 │ LiveCapture│      │ Extraction │       │ + PCA      │
@@ -159,6 +159,7 @@ Each log includes:
                             ┌─────────────────┴─────────────────┐
                             │ Email Alerts + Log Suspicious Data│
                             └───────────────────────────────────┘
+```
 
 ## 🛠 Future Improvements
 - Add quarantine folder for malware-flagged software
